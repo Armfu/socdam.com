@@ -1,5 +1,5 @@
 <?php
-require_once("inc/init.php");
+require_once("init.php");
 if($_POST)
 {
 	$verif_caractere = preg_match('#^[a-zA-Z0-9._-]+$#', $_POST['pseudo']); 
@@ -58,4 +58,4 @@ if($_POST)
     <input name="inscription" value="S'inscrire" type="submit">
 </form>
  
-<?php require_once("inc/bas.inc.php"); ?>
+<?php require_once("bas.inc.php"); ?>
