@@ -1,0 +1,35 @@
+*{margin: auto;}
+body{font: #bbc4ff;background-image: url('../../photo/image/Plan de travail – 2.png');font-size: 12px;animation-duration: inherit;}
+a{text-decoration: none;color: #000;}
+.conteneur{margin: 0 auto;max-width: 1170px}
+/**************************************************haut*********/
+header{animation: forwards;background: #7967ff;animation-fill-mode: image: url('../../photo/image/Plan de travail – 2.png');padding: 50px;text-align: center;}
+header span{color: #ffff;font-weight: bold;text-transform: uppercase;margin-right:5%; }
+header nav{display: inline;}
+header a{color: #ffffff;text-decoration: none;padding:10px 10px}
+header nav a:hover{background: #04baf6}
+/****************milieu***********************/
+section{padding: 50px;min-height: 800px}
+/****************footer***********************/
+footer{background: #000;color: white;text-align: center;padding: 20px 5px}
+/**********************general******************/
+.erreur{background: #ff0000;padding:5px;margin:5px}
+.validation{background:#efefff ;padding: 5px;margin:5px}
+.cadre{border: 1px solid #c0c0c0;width: 30%}
+.cadre h2{background: #c0c0c0;padding: 0;text-align: center;font-size: 15px;padding: 5px}
+.cadre p{padding: 10px;}
+.centre{text-align: center;}
+/****************boutique***************************/
+.boutique-gauche{float: left;width: 30%;background: #f2f2f2;min-height: 500px;margin-right: 10%; padding-top: 10px;text-align: center;}
+.boutique-gauche ul{list-style: none;padding: 0;}
+.boutique ul li a{display: block;padding: 20px;}
+.boutique ul li a:hover{background: #04baf6;color: #fff;}
+.boutique-droite{float: left;width: 60%;}
+.boutique-produit{float: left;width: 30%;text-align: center;padding: 5px;border-bottom: 1px solid #c0c0c0;}
+.boutique-produit:hover{background: #c0c0c0;}
+/*******************divers*********************/
+table{border-collapse: collapse;}
+table tr td{
+	text-align: center;
+}
+td th{padding: 5px}
