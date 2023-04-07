@@ -1,5 +1,5 @@
  <?php
-require_once("inc/init.php");
+require_once("init.php");
 //--------------------------------- TRAITEMENTS PHP ---------------------------------//
 if(isset($_GET['action']) && $_GET['action'] == "deconnexion") 
 {
@@ -38,7 +38,7 @@ if($_POST)
 }
 //--------------------------------- AFFICHAGE HTML ---------------------------------//
 ?>
-<?php require_once("inc/haut.php"); ?>
+<?php require_once("haut.php"); ?>
 <?php echo $contenu; ?>
  
 <form method="post" action="">
@@ -51,4 +51,4 @@ if($_POST)
      <input type="submit" value="Se connecter"/>
 </form>
  
-<?php require_once("inc/bas.inc.php"); ?>
+<?php require_once("bas.inc.php"); ?>
