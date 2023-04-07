@@ -1,5 +1,5 @@
 <?php
-require_once("inc/init.php");
+require_once("init.php");
 //--------------------------------- TRAITEMENTS PHP ---------------------------------//
 if(!internauteEstConnecte()) 
 {
@@ -14,4 +14,4 @@ $contenu .= 'votre adresse est: ' . $_SESSION['membre']['adresse'] . '</p></div>
 //--------------------------------- AFFICHAGE HTML ---------------------------------//
 require_once("inc/haut.php");
 echo $contenu;
-require_once("inc/bas.inc.php");
+require_once("bas.inc.php");
