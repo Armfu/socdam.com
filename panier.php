@@ -1,5 +1,5 @@
 <?php
-require_once("inc/init.php");
+require_once("init.php");
 //--------------------------------- TRAITEMENTS PHP ---------------------------------//
 //--- AJOUT PANIER ---//
 if(isset($_POST['ajout_panier'])) 
@@ -53,7 +53,7 @@ if(isset($_POST['payer']))
 }
 
 //--------------------------------- AFFICHAGE HTML ---------------------------------//
-include("inc/haut.php");
+include("haut.php");
 echo $contenu;
 echo "<table border='1' style='border-collapse: collapse' cellpadding='7'>";
 echo "<tr><td colspan='5'>Panier</td></tr>";
@@ -88,4 +88,4 @@ else
 }
 echo "</table><br />";
 echo "<i>Réglement par CHÈQUE uniquement à l'adresse suivante :</i><br />";
-include("inc/bas.inc.php");
+include("bas.inc.php");
