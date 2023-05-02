@@ -1,5 +1,5 @@
 <?php
-require_once("inc/init.php");
+require_once("init.php");
 //--------------------------------- TRAITEMENTS PHP ---------------------------------//
 if(isset($_GET['id_produit'])) 	
 { $resultat = executeRequete("SELECT * FROM produit WHERE id_produit = '$_GET[id_produit]'"); }
@@ -19,7 +19,7 @@ if($produit['stock'] > 0)
 	$contenu .= "<i>Nombre de produit(s) disponible : $produit[stock] </i><br /><br />";
 	$contenu .= '<form method="post" action="panier.php">';
 		$contenu .= "<input type='hidden' name='id_produit' value='$produit[id_produit]' />";
-		$contenu .= '<label for="quantite">Quantité : </label>';
+		$contenu .= '<label for="quantite">QuantitÃ© : </label>';
 		$contenu .= '<select id="quantite" name="quantite">';
 			for($i = 1; $i <= $produit['stock'] && $i <= 5; $i++)
 			{
@@ -33,9 +33,9 @@ else
 {
 	$contenu .= 'Rupture de stock !';
 }
-$contenu .= "<br /><a href='boutique.php?categorie=" . $produit['categorie'] . "'>Retour vers la sélection de " . $produit['categorie'] . "</a>";
+$contenu .= "<br /><a href='boutique.php?categorie=" . $produit['categorie'] . "'>Retour vers la sÃ©lection de " . $produit['categorie'] . "</a>";
 //--------------------------------- AFFICHAGE HTML ---------------------------------//
-require_once("inc/haut.php");
+require_once("haut.php");
 echo $contenu;
-require_once("inc/bas.inc.php");
+require_once("bas.inc.php");
 ?>
