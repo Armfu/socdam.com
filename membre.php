@@ -1,5 +1,5 @@
 <?php
-require_once("../inc/init.php");
+require_once("init.php");
 if(!internauteEstConnecteEtEstAdmin())
 {
 	header("location:../connexion.php");
@@ -11,7 +11,7 @@ if($_GET['msg'] && $_GET['msg']=="supok"){
 	header("location:membre.php");
 }
 //----------------------------Affichage---------------------------------//
-require_once("inc/haut.php");
+require_once("haut.php");
 echo'<h1>Voici les membres inscrits aux sites</h1>';
 $resultat=executeRequete("SELECT*FROM membre");
 echo'Nombre de membre(s):'.$resultat;
