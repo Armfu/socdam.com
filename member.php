@@ -1,5 +1,5 @@
 <?php
-require_once("inc/init.php");
+require_once("init.php");
 if(!internauteEstConnecte())
 {
 	header("location:connexion.php");
@@ -34,7 +34,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'modif')
 	$msg .= "la modification à bien été prise en compte";
 }
 
-require_once("inc/haut.php");
+require_once("haut.php");
 echo $msg;
 ?>
 		<h2> Modification de vos informations </h2>
