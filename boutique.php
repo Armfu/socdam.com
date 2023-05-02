@@ -1,5 +1,5 @@
 <?php
-require_once("inc/init.php");
+require_once("init.php");
 //-------------------TRAITEMENTS PHP-----------------//
 //-------AFFICHAGE DES CATEGORIES-----//
 $categorie_des_produits=executeRequete("SELECT DISTINCT categorie FROM produit");
@@ -30,7 +30,7 @@ if(isset($_GET['categorie']))
 $contenu .='</div>';
 //--------------------------------------------------------------------------------------------------------------------------//AFFICHAGE HTML
 //---------------------------------//
-require_once("inc/haut.php");
+require_once("haut.php");
 echo $contenu;
-require_once("inc/bas.inc.php");
+require_once("bas.inc.php");
 ?>
