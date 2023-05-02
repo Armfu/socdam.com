@@ -26,7 +26,7 @@ if($_POST)
 	}
 }
 ?>
-<?php require_once("inc/haut.php"); ?>
+<?php require_once("haut.php"); ?>
 <?php echo $contenu; ?>
 
 <form method="post" action="">
